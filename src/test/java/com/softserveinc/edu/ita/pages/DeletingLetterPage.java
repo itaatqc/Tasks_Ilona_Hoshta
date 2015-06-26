@@ -8,7 +8,7 @@ import com.softserve.edu.ita.tools.ContextVisible;
 public class DeletingLetterPage {
 	private WebElement delete;
 	private WebElement logout;
-
+	// TODO: move selectors to a separate file
 	public DeletingLetterPage() {
 		this.delete = ContextVisible.get().getVisibleWebElement(
 				By.xpath("//*[@id='js-page']/div/div[5]/div/div[3]/div/div[2]/div[1]/div/div/div[2]/a[8]"));
