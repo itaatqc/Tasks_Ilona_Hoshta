@@ -25,6 +25,7 @@ public class Weather {
 	public Object[][] firstTest() {
 		return new Object[][] { {
 				BrowserRepository.getFirefoxByTemporaryProfile(),
+				//TODO: Why is this URL here?
 				"http://www.yandex.ru/" } };
 	}
 
