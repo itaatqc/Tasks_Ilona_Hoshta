@@ -6,6 +6,7 @@ import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import com.softserve.edu.ita.data.UrlRepository.Urls;
 import com.softserve.edu.ita.tools.BrowserRepository;
 import com.softserve.edu.ita.tools.IBrowser;
 import com.softserve.edu.ita.tools.WebDriverUtils;
@@ -25,8 +26,7 @@ public class Weather {
 	public Object[][] firstTest() {
 		return new Object[][] { {
 				BrowserRepository.getFirefoxByTemporaryProfile(),
-				//TODO: Why is this URL here?
-				"http://www.yandex.ru/" } };
+				Urls.YANDEX_URL.toString() } };
 	}
 
 	@Test(dataProvider = "firstTest")
